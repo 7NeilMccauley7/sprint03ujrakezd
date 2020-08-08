@@ -1,0 +1,91 @@
+/* h1 pl egy szelektor ami az összes h1-es elemre vonatkozik (element selector)  */
+/* safe fontok amik minden böngészőben benne van. 
+Ha speciálisat használunk akkor lehet hogy nem minden böngésző jeleníti meg*/
+
+
+/*  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
+@font-face {   /* berakott saját betűtípus */
+    font-family: "oswald-light";
+    src: url("fonts/Oswald-Light.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "oswald-bold";
+    src: url("fonts/Oswald-Bold.ttf");
+    font-weight: 200;
+}
+
+
+
+/* ebben a html stylus elem-paraméterben meglehet olyan értéket adni ami az egész weboldalra kihat ha külön-külön nem volt lekezelve. 
+Ha máshol külön le van kezelve a a paraméter akkor nem örökli. Máskülönben örökli.*/
+
+html {
+    text-transform: uppercase;
+}
+
+h1 {
+    color: rgb(111, 201, 231);
+    font-family: 'Roboto', sans-serif;;
+    text-align: justify; 
+    text-transform: none;
+}
+
+
+
+
+#BioHeader {    /* id selector. Ez a jele: #. A html-ben ellátott h3-nak az id-jra hivatkozik és csak ezeknél alkalmazza a változtatásokat*/
+    color: chartreuse;
+}
+
+
+#SkillsHeader {
+    color: darkblue;
+    
+}
+
+h3 {
+    color: brown;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+/* ami .akármivel van meghatározva az class-ban van és a html-ben lévő class elemekre mutat */
+.content {
+    color: grey;
+    font-size: 24px;
+    font-family: "oswald-light";
+    text-align: justify;/* a szöveget igazítja táblázat kocka szerűen ami szép. ezen kívűl van még left, right, center stb. */
+    text-transform: lowercase; /* minden szöveg nagybetűs, de van kisbetűs lowercase*/
+    line-height: normal; /* a sor magássága */
+    font-weight: lighter;
+}
+
+
+.bold{
+    font-weight: bold;
+}
+
+/*  */
+img {
+    width: 10%;
+    box-shadow: 3px 3px 7px black;
+    margin: 1%;
+}
+
+.img-div {
+    background-color: darkcyan;
+}
+
+
+.light {
+    background-color:dimgray;
+}
